@@ -35,7 +35,7 @@ systemctl enable firewalld
 systemctl enable acpid
 
 useradd -m -G wheel -s /bin/bash lee
-echo ermanno:password | chpasswd
+echo lee:password | chpasswd
 
 echo "lee ALL=(ALL) ALL" >> /etc/sudoers.d/lee
 
