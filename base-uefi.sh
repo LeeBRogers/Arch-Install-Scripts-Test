@@ -37,9 +37,6 @@ systemctl enable acpid
 useradd -m -G wheel -s /bin/bash lee
 echo lee:password | chpasswd
 
-echo "lee ALL=(ALL) ALL" >> /etc/sudoers.d/lee
-
-
 printf "\e[1;32mDone! Type exit, umount -a and reboot.\e[0m"
 
 
