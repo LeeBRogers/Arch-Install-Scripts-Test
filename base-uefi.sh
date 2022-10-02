@@ -2,6 +2,7 @@
 
 ln -sf /usr/share/zoneinfo/Europe/London /etc/localtime
 hwclock --systohc
+sed -i '171s/.//' /etc/locale.gen
 sed -i '154s/.//' /etc/locale.gen
 locale-gen
 echo "LANG=en_GB.UTF-8" >> /etc/locale.conf
