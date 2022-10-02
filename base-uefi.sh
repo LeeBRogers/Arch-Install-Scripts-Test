@@ -17,7 +17,7 @@ echo root:password | chpasswd
 pacman -S base-devel linux-headers networkmanager alsa-utils bluez bluez-utils pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber firewalld virt-manager qemu-desktop libvirt edk2-ovmf dnsmasq iptables-nft avahi cups nss-mdns pacman-contrib reflector acpid acpid_call
 pacman -S --noconfirm xf86-video-amdgpu
 # pacman -S --noconfirm nvidia nvidia-utils nvidia-settings
-bootctl install --path=/boot 
+bootctl --path=/boot install 
 #grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB #change the directory to /boot/efi is you mounted the EFI partition at /boot/efi
 systemctl enable NetworkManager
 systemctl enable bluetooth
